@@ -1,0 +1,146 @@
+/* General page styling */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #e9f0f9, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: #4a90e2;
+    color: white;
+    margin: 0 0 25px 0;
+    font-size: 28px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Chat input area */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+    background: #f9fafc;
+    border: 1px solid #d0d7e3;
+    border-radius: 40px;
+    padding: 8px 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Input field */
+form input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 30px;
+    background: transparent;
+    color: #333;
+}
+
+/* Submit button (like ChatGPT’s send button) */
+form input[type="submit"] {
+    background: #4a90e2;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #357abd;
+}
+
+/* Response message */
+h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Chat history section */
+h3 {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+    color: #4a90e2;
+}
+
+/* Chat table */
+table {
+    margin: 20px auto;
+    width: 85%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+table th,
+table td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 15px;
+}
+
+table th {
+    background: #f0f4f9;
+    font-weight: 600;
+    color: #333;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Highlight prohibited vs non-prohibited */
+td[style*="red"] {
+    font-weight: bold;
+    color: #e74c3c !important;
+}
+
+td[style*="green"] {
+    font-weight: bold;
+    color: #2ecc71 !important;
+}
+
+.message {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: fit-content;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.user {
+    background-color: #f9f6f6;
+}
+
+.ai {
+    background-color: #e0f7fa;
+}
+
+.message .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.response-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
